@@ -92,7 +92,9 @@ end;
 
 procedure TFrmMenu.BtnCadUsuarioClick(Sender: TObject);
 begin
-  FrmCadProjeto.Show;
+  FrmCadUsuario.op:='i';
+  FrmCadUsuario.cod:='0';
+  FrmCadUsuario.Show;
 end;
 
 procedure TFrmMenu.BtnConsAlunosClick(Sender: TObject);

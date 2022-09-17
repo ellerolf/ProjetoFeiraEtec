@@ -10,360 +10,6 @@ object FrmMenu: TFrmMenu
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object Rectangle1: TRectangle
-    Align = Left
-    Fill.Color = xFF820808
-    Size.Width = 257.000000000000000000
-    Size.Height = 780.000000000000000000
-    Size.PlatformDefault = False
-    object LayLateral: TLayout
-      Align = Left
-      Padding.Left = 8.000000000000000000
-      Padding.Top = 8.000000000000000000
-      Padding.Right = 8.000000000000000000
-      Padding.Bottom = 8.000000000000000000
-      Size.Width = 257.000000000000000000
-      Size.Height = 780.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 0
-      object LayEsquerda: TLayout
-        Align = Left
-        Position.X = 8.000000000000000000
-        Position.Y = 8.000000000000000000
-        Size.Width = 241.000000000000000000
-        Size.Height = 764.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 0
-        object LayUsuario: TLayout
-          Align = Top
-          Size.Width = 241.000000000000000000
-          Size.Height = 129.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 1
-          object RoundRect1: TRoundRect
-            Align = Top
-            Corners = [TopRight, BottomLeft]
-            Fill.Color = xFFFBFBFB
-            Size.Width = 241.000000000000000000
-            Size.Height = 50.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Label7: TLabel
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 50.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00070000000000000004000000}
-              TextSettings.HorzAlign = Center
-              Text = 'Usuarios'
-              TabOrder = 1
-            end
-          end
-          object RoundRect4: TRoundRect
-            Align = Top
-            Position.Y = 60.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnCadUsuario: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Cadastro'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              OnClick = BtnCadUsuarioClick
-            end
-          end
-          object Label1: TLabel
-            Align = Top
-            Position.Y = 50.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 10.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 2
-          end
-        end
-        object LayProjeto: TLayout
-          Align = Top
-          Position.Y = 129.000000000000000000
-          Size.Width = 241.000000000000000000
-          Size.Height = 208.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          object RoundRect2: TRoundRect
-            Align = Top
-            Corners = [TopRight, BottomLeft]
-            Fill.Color = claWhite
-            Size.Width = 241.000000000000000000
-            Size.Height = 50.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Label6: TLabel
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 50.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00070000000000000004000000}
-              TextSettings.HorzAlign = Center
-              Text = 'Projeto'
-              TabOrder = 1
-            end
-          end
-          object Label2: TLabel
-            Align = Top
-            Position.Y = 50.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 10.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 2
-          end
-          object RoundRect8: TRoundRect
-            Align = Top
-            Position.Y = 95.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnCadProjeto: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Cadastro Projeto'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              OnClick = BtnCadProjetoClick
-            end
-          end
-          object RoundRect6: TRoundRect
-            Align = Top
-            Position.Y = 60.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnCadAluno: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Cadastro Aluno'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              OnClick = BtnCadAlunoClick
-            end
-          end
-          object RoundRect5: TRoundRect
-            Align = Top
-            Position.Y = 130.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnAtribuicao: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Atribui'#231#227'o de Avalia'#231#227'o'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              OnClick = BtnCadProjetoClick
-            end
-          end
-        end
-        object LayRelatorio: TLayout
-          Align = Top
-          Position.Y = 537.000000000000000000
-          Size.Width = 241.000000000000000000
-          Size.Height = 200.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 2
-          object RoundRect3: TRoundRect
-            Align = Top
-            Corners = [TopRight, BottomLeft]
-            Fill.Color = claWhite
-            Size.Width = 241.000000000000000000
-            Size.Height = 50.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Label8: TLabel
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 50.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00070000000000000004000000}
-              TextSettings.HorzAlign = Center
-              Text = 'Relatorio'
-              TabOrder = 1
-            end
-          end
-          object Label3: TLabel
-            Align = Top
-            Position.Y = 50.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 10.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 2
-          end
-          object RoundRect9: TRoundRect
-            Align = Top
-            Position.Y = 60.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnRelaAvaliacao: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Avalia'#231#227'o'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-            end
-          end
-          object RoundRect10: TRoundRect
-            Align = Top
-            Position.Y = 130.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnRelaProjeto: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Projeto'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-            end
-          end
-          object RoundRect11: TRoundRect
-            Align = Top
-            Position.Y = 95.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnRelaNota: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Nota'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-            end
-          end
-        end
-        object LayConsulta: TLayout
-          Align = Top
-          Position.Y = 337.000000000000000000
-          Size.Width = 241.000000000000000000
-          Size.Height = 200.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 3
-          object RouConsulta: TRoundRect
-            Align = Top
-            Corners = [TopRight, BottomLeft]
-            Fill.Color = claWhite
-            Size.Width = 241.000000000000000000
-            Size.Height = 50.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Label4: TLabel
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 50.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00070000000000000004000000}
-              TextSettings.HorzAlign = Center
-              Text = 'Consulta'
-              TabOrder = 1
-            end
-          end
-          object RouConsUsuario: TRoundRect
-            Align = Top
-            Fill.Color = xFFE3E3E3
-            Position.Y = 60.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnConsUsuario: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Consulta Usuario'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              OnClick = BtnConsUsuarioClick
-            end
-          end
-          object Label5: TLabel
-            Align = Top
-            Position.Y = 50.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 10.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 3
-          end
-          object RouConsAluno: TRoundRect
-            Align = Top
-            Fill.Color = xFFE3E3E3
-            Position.Y = 95.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnConsAlunos: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Consulta Alunos'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              OnClick = BtnConsAlunosClick
-            end
-          end
-          object RouConsProjeto: TRoundRect
-            Align = Top
-            Fill.Color = xFFE3E3E3
-            Position.Y = 130.000000000000000000
-            Size.Width = 241.000000000000000000
-            Size.Height = 35.000000000000000000
-            Size.PlatformDefault = False
-            object BtnConsProjeto: TSpeedButton
-              Align = Client
-              StyledSettings = [Family, FontColor]
-              Size.Width = 241.000000000000000000
-              Size.Height = 35.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Consulta Projeto'
-              TextSettings.Font.Size = 16.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              OnClick = BtnConsProjetoClick
-            end
-          end
-        end
-      end
-    end
-  end
   object Image1: TImage
     MultiResBitmap = <
       item
@@ -3005,5 +2651,359 @@ object FrmMenu: TFrmMenu
     Size.Width = 823.000000000000000000
     Size.Height = 780.000000000000000000
     Size.PlatformDefault = False
+  end
+  object Rectangle1: TRectangle
+    Align = Left
+    Fill.Color = xFF820808
+    Size.Width = 257.000000000000000000
+    Size.Height = 780.000000000000000000
+    Size.PlatformDefault = False
+    object LayLateral: TLayout
+      Align = Left
+      Padding.Left = 8.000000000000000000
+      Padding.Top = 8.000000000000000000
+      Padding.Right = 8.000000000000000000
+      Padding.Bottom = 8.000000000000000000
+      Size.Width = 257.000000000000000000
+      Size.Height = 780.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object LayEsquerda: TLayout
+        Align = Left
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 241.000000000000000000
+        Size.Height = 764.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object LayUsuario: TLayout
+          Align = Top
+          Size.Width = 241.000000000000000000
+          Size.Height = 129.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object RoundRect1: TRoundRect
+            Align = Top
+            Corners = [TopRight, BottomLeft]
+            Fill.Color = xFFFBFBFB
+            Size.Width = 241.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Label7: TLabel
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Usuarios'
+              TabOrder = 1
+            end
+          end
+          object RoundRect4: TRoundRect
+            Align = Top
+            Position.Y = 60.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnCadUsuario: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Cadastro'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              OnClick = BtnCadUsuarioClick
+            end
+          end
+          object Label1: TLabel
+            Align = Top
+            Position.Y = 50.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 10.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+          end
+        end
+        object LayProjeto: TLayout
+          Align = Top
+          Position.Y = 129.000000000000000000
+          Size.Width = 241.000000000000000000
+          Size.Height = 208.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object RoundRect2: TRoundRect
+            Align = Top
+            Corners = [TopRight, BottomLeft]
+            Fill.Color = claWhite
+            Size.Width = 241.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Label6: TLabel
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Projeto'
+              TabOrder = 1
+            end
+          end
+          object Label2: TLabel
+            Align = Top
+            Position.Y = 50.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 10.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+          end
+          object RoundRect8: TRoundRect
+            Align = Top
+            Position.Y = 95.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnCadProjeto: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Cadastro Projeto'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              OnClick = BtnCadProjetoClick
+            end
+          end
+          object RoundRect6: TRoundRect
+            Align = Top
+            Position.Y = 60.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnCadAluno: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Cadastro Aluno'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              OnClick = BtnCadAlunoClick
+            end
+          end
+          object RoundRect5: TRoundRect
+            Align = Top
+            Position.Y = 130.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnAtribuicao: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Atribui'#231#227'o de Avalia'#231#227'o'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              OnClick = BtnCadProjetoClick
+            end
+          end
+        end
+        object LayRelatorio: TLayout
+          Align = Top
+          Position.Y = 537.000000000000000000
+          Size.Width = 241.000000000000000000
+          Size.Height = 200.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object RoundRect3: TRoundRect
+            Align = Top
+            Corners = [TopRight, BottomLeft]
+            Fill.Color = claWhite
+            Size.Width = 241.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Label8: TLabel
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Relatorio'
+              TabOrder = 1
+            end
+          end
+          object Label3: TLabel
+            Align = Top
+            Position.Y = 50.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 10.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+          end
+          object RoundRect9: TRoundRect
+            Align = Top
+            Position.Y = 60.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnRelaAvaliacao: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Avalia'#231#227'o'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+            end
+          end
+          object RoundRect10: TRoundRect
+            Align = Top
+            Position.Y = 130.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnRelaProjeto: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Projeto'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+            end
+          end
+          object RoundRect11: TRoundRect
+            Align = Top
+            Position.Y = 95.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnRelaNota: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Nota'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+            end
+          end
+        end
+        object LayConsulta: TLayout
+          Align = Top
+          Position.Y = 337.000000000000000000
+          Size.Width = 241.000000000000000000
+          Size.Height = 200.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object RouConsulta: TRoundRect
+            Align = Top
+            Corners = [TopRight, BottomLeft]
+            Fill.Color = claWhite
+            Size.Width = 241.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Label4: TLabel
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Consulta'
+              TabOrder = 1
+            end
+          end
+          object RouConsUsuario: TRoundRect
+            Align = Top
+            Fill.Color = xFFE3E3E3
+            Position.Y = 60.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnConsUsuario: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Consulta Usuario'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              OnClick = BtnConsUsuarioClick
+            end
+          end
+          object Label5: TLabel
+            Align = Top
+            Position.Y = 50.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 10.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+          end
+          object RouConsAluno: TRoundRect
+            Align = Top
+            Fill.Color = xFFE3E3E3
+            Position.Y = 95.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnConsAlunos: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Consulta Alunos'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              OnClick = BtnConsAlunosClick
+            end
+          end
+          object RouConsProjeto: TRoundRect
+            Align = Top
+            Fill.Color = xFFE3E3E3
+            Position.Y = 130.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            object BtnConsProjeto: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, FontColor]
+              Size.Width = 241.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Consulta Projeto'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              OnClick = BtnConsProjetoClick
+            end
+          end
+        end
+      end
+    end
   end
 end

@@ -3,10 +3,11 @@ unit UCadUsuario;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants, System.JSON,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
   FMX.StdCtrls, FMX.ListBox, FMX.DateTimeCtrls, FMX.Edit,
-  FMX.Controls.Presentation, FMX.Layouts;
+  FMX.Controls.Presentation, FMX.Layouts, FMX.ScrollBox, FMX.Memo;
 
 type
   TFrmCadUsuario = class(TForm)
@@ -16,7 +17,7 @@ type
     EdtNome: TEdit;
     Label2: TLabel;
     Label3: TLabel;
-    EdtData: TDateEdit;
+    DtaDataNasc: TDateEdit;
     Label4: TLabel;
     CboTipo: TComboBox;
     RoundRect1: TRoundRect;
@@ -25,10 +26,15 @@ type
     Layout2: TLayout;
     Label5: TLabel;
     RoundRect2: TRoundRect;
+    Memo1: TMemo;
+    procedure BtnSalvarClick(Sender: TObject);
   private
     { Private declarations }
+    jsonobj: TJSONObject;
+    gerajson: string;
   public
     { Public declarations }
+    cod,op:string;
   end;
 
 var
@@ -37,5 +43,29 @@ var
 implementation
 
 {$R *.fmx}
+
+uses UCadAluno, UModulo, UCadEixo;
+
+procedure TFrmCadUsuario.BtnSalvarClick(Sender: TObject);
+begin
+   try
+    jsonobj := TJSONObject.Create;
+    jsonobj.AddPair('op', op);
+    jsonobj.AddPair('usucodigo', cod);
+    jsonobj.AddPair('usunome', EdtNome.Text);
+    jsonobj.AddPair('usudtnasc', datetostr(DtaDataNasc.Date));
+    jsonobj.AddPair('usutipo', inttostr(CboTipo.ItemIndex));
+    gerajson := jsonobj.ToString;
+    Memo1.Text := gerajson;
+    dm.RESTRequest1.Resource := '/usuario.php?json={parametro}';
+    dm.RESTRequest1.Params.AddUrlSegment('parametro',gerajson);
+    //dm.RESTRequest1.Execute;
+    EdtNome.Text:='';
+    showmessage('Registro salvo com sucesso');
+  finally
+    jsonobj.DisposeOf;
+  end;
+end;
+
 
 end.

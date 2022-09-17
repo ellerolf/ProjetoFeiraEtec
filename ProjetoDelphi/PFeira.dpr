@@ -13,15 +13,16 @@ uses
   UAtribuicao in 'UAtribuicao.pas' {FrmAtribuicao},
   UConsUsuario in 'UConsUsuario.pas' {FrmConsUsuario},
   UConsAluno in 'UConsAluno.pas' {FrmConsAluno},
-  UConsProjetos in 'UConsProjetos.pas' {FrmConsProjeto};
+  UConsProjetos in 'UConsProjetos.pas' {FrmConsProjeto},
+  UModulo in 'UModulo.pas' {DM: TDataModule};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TFrmAcesso, FrmAcesso);
-  Application.CreateForm(TFrmMenu, FrmMenu);
   Application.CreateForm(TFrmCadUsuario, FrmCadUsuario);
+  Application.CreateForm(TFrmMenu, FrmMenu);
   Application.CreateForm(TFrmCadAvaliadores, FrmCadAvaliadores);
   Application.CreateForm(TFrmCadEixo, FrmCadEixo);
   Application.CreateForm(TFrmCadAluno, FrmCadAluno);
@@ -30,5 +31,6 @@ begin
   Application.CreateForm(TFrmConsUsuario, FrmConsUsuario);
   Application.CreateForm(TFrmConsAluno, FrmConsAluno);
   Application.CreateForm(TFrmConsProjeto, FrmConsProjeto);
+  Application.CreateForm(TDM, DM);
   Application.Run;
 end.
