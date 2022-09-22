@@ -45,10 +45,10 @@ type
     ProjetoPRONOME: TStringField;
     ProjetoCODIGOEIX: TIntegerField;
     UsuarioUSUCODIGO: TIntegerField;
-    UsuarioUSUCPF: TStringField;
     UsuarioUSUNOME: TStringField;
     UsuarioUSUDTNASC: TDateField;
     UsuarioUSUTIPO: TStringField;
+    UsuarioUSUCPF: TStringField;
   private
     { Private declarations }
   public

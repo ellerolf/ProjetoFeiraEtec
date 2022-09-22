@@ -5,7 +5,7 @@ object DM: TDM
   object RESTClient1: TRESTClient
     Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
     AcceptCharset = 'utf-8, *;q=0.8'
-    BaseURL = 'http://localhost:8066/wsfeira/'
+    BaseURL = 'http://localhost/wsfeira'
     Params = <>
     Left = 168
     Top = 16
@@ -188,7 +188,8 @@ object DM: TDM
       FieldName = 'USUCODIGO '
     end
     object UsuarioUSUCPF: TStringField
-      FieldName = 'USUCPF '
+      FieldName = 'USUCPF'
+      Size = 40
     end
     object UsuarioUSUNOME: TStringField
       FieldName = 'USUNOME'
