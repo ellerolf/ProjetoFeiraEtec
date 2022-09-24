@@ -30,6 +30,7 @@ Coordinates=289,10,46,51
 
 [ListView1]
 Coordinates=550,240,89,141
+Visible=True
 
 [BtnSalvar]
 Coordinates=209,10,62,51

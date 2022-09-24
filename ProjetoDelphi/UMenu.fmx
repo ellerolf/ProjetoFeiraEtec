@@ -2,10 +2,10 @@ object FrmMenu: TFrmMenu
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 780
-  ClientWidth = 1080
+  ClientHeight = 650
+  ClientWidth = 1000
   Fill.Kind = Solid
-  Position = DesktopCenter
+  Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -2648,15 +2648,15 @@ object FrmMenu: TFrmMenu
         FileName = 'D:\PROJETO FEIRA\LOGO-QUADRADA 2.png'
       end>
     Align = Client
-    Size.Width = 823.000000000000000000
-    Size.Height = 780.000000000000000000
+    Size.Width = 743.000000000000000000
+    Size.Height = 650.000000000000000000
     Size.PlatformDefault = False
   end
   object Rectangle1: TRectangle
     Align = Left
     Fill.Color = xFF820808
     Size.Width = 257.000000000000000000
-    Size.Height = 780.000000000000000000
+    Size.Height = 650.000000000000000000
     Size.PlatformDefault = False
     object LayLateral: TLayout
       Align = Left
@@ -2665,7 +2665,7 @@ object FrmMenu: TFrmMenu
       Padding.Right = 8.000000000000000000
       Padding.Bottom = 8.000000000000000000
       Size.Width = 257.000000000000000000
-      Size.Height = 780.000000000000000000
+      Size.Height = 650.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object LayEsquerda: TLayout
@@ -2673,13 +2673,13 @@ object FrmMenu: TFrmMenu
         Position.X = 8.000000000000000000
         Position.Y = 8.000000000000000000
         Size.Width = 241.000000000000000000
-        Size.Height = 764.000000000000000000
+        Size.Height = 634.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         object LayUsuario: TLayout
           Align = Top
           Size.Width = 241.000000000000000000
-          Size.Height = 129.000000000000000000
+          Size.Height = 113.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 1
           object RoundRect1: TRoundRect
@@ -2732,9 +2732,9 @@ object FrmMenu: TFrmMenu
         end
         object LayProjeto: TLayout
           Align = Top
-          Position.Y = 129.000000000000000000
+          Position.Y = 113.000000000000000000
           Size.Width = 241.000000000000000000
-          Size.Height = 208.000000000000000000
+          Size.Height = 176.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           object RoundRect2: TRoundRect
@@ -2764,7 +2764,7 @@ object FrmMenu: TFrmMenu
             Size.Width = 241.000000000000000000
             Size.Height = 10.000000000000000000
             Size.PlatformDefault = False
-            TabOrder = 2
+            TabOrder = 3
           end
           object RoundRect8: TRoundRect
             Align = Top
@@ -2820,10 +2820,18 @@ object FrmMenu: TFrmMenu
               OnClick = BtnCadProjetoClick
             end
           end
+          object Label9: TLabel
+            Align = Top
+            Position.Y = 165.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 10.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+          end
         end
         object LayRelatorio: TLayout
           Align = Top
-          Position.Y = 537.000000000000000000
+          Position.Y = 465.000000000000000000
           Size.Width = 241.000000000000000000
           Size.Height = 200.000000000000000000
           Size.PlatformDefault = False
@@ -2855,7 +2863,7 @@ object FrmMenu: TFrmMenu
             Size.Width = 241.000000000000000000
             Size.Height = 10.000000000000000000
             Size.PlatformDefault = False
-            TabOrder = 2
+            TabOrder = 3
           end
           object RoundRect9: TRoundRect
             Align = Top
@@ -2908,12 +2916,20 @@ object FrmMenu: TFrmMenu
               TextSettings.Font.StyleExt = {00060000000000000004000000}
             end
           end
+          object Label11: TLabel
+            Align = Top
+            Position.Y = 165.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 10.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+          end
         end
         object LayConsulta: TLayout
           Align = Top
-          Position.Y = 337.000000000000000000
+          Position.Y = 289.000000000000000000
           Size.Width = 241.000000000000000000
-          Size.Height = 200.000000000000000000
+          Size.Height = 176.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 3
           object RouConsulta: TRoundRect
@@ -3001,6 +3017,14 @@ object FrmMenu: TFrmMenu
               TextSettings.Font.StyleExt = {00060000000000000004000000}
               OnClick = BtnConsProjetoClick
             end
+          end
+          object Label10: TLabel
+            Align = Top
+            Position.Y = 165.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 10.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
           end
         end
       end

@@ -141,6 +141,7 @@ object DM: TDM
     end
   end
   object RDProjeto: TRESTResponseDataSetAdapter
+    Active = True
     Dataset = Projeto
     FieldDefs = <>
     Response = RESTResponse1
@@ -148,23 +149,40 @@ object DM: TDM
     Top = 192
   end
   object Projeto: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'PROCODIGO '
+        DataType = ftInteger
+      end
+      item
+        Name = 'PRONOME '
+        DataType = ftString
+        Size = 20
+      end>
+    IndexDefs = <>
     FetchOptions.AssignedValues = [evMode]
     FetchOptions.Mode = fmAll
     ResourceOptions.AssignedValues = [rvSilentMode]
     ResourceOptions.SilentMode = True
-    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
     UpdateOptions.CheckRequired = False
     UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
     Left = 264
     Top = 248
     object ProjetoPROCODIGO: TIntegerField
       FieldName = 'PROCODIGO '
     end
+    object ProjetoPROEIXO: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'PROEIXO'
+      Calculated = True
+    end
     object ProjetoPRONOME: TStringField
       FieldName = 'PRONOME '
-    end
-    object ProjetoCODIGOEIX: TIntegerField
-      FieldName = 'CODIGOEIX '
     end
   end
   object RDUsuario: TRESTResponseDataSetAdapter

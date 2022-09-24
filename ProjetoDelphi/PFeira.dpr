@@ -20,9 +20,8 @@ uses
 
 begin
   Application.Initialize;
-  Application.CreateForm(TFrmAcesso, FrmAcesso);
-  Application.CreateForm(TFrmCadUsuario, FrmCadUsuario);
   Application.CreateForm(TFrmMenu, FrmMenu);
+  Application.CreateForm(TFrmCadUsuario, FrmCadUsuario);
   Application.CreateForm(TFrmCadAvaliadores, FrmCadAvaliadores);
   Application.CreateForm(TFrmCadEixo, FrmCadEixo);
   Application.CreateForm(TFrmCadAluno, FrmCadAluno);
@@ -32,5 +31,6 @@ begin
   Application.CreateForm(TFrmConsAluno, FrmConsAluno);
   Application.CreateForm(TFrmConsProjeto, FrmConsProjeto);
   Application.CreateForm(TDM, DM);
+  Application.CreateForm(TFrmAcesso, FrmAcesso);
   Application.Run;
 end.

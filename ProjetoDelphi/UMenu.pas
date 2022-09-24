@@ -52,6 +52,9 @@ type
     Label8: TLabel;
     RoundRect5: TRoundRect;
     BtnAtribuicao: TSpeedButton;
+    Label9: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
     procedure BtnCadUsuarioClick(Sender: TObject);
     procedure BtnCadEixoClick(Sender: TObject);
     procedure BtnCadAlunoClick(Sender: TObject);
@@ -87,7 +90,9 @@ end;
 
 procedure TFrmMenu.BtnCadProjetoClick(Sender: TObject);
 begin
-  FrmAtribuicao.Show;
+  FrmCadProjeto.op:='i';
+  FrmCadProjeto.cod:='0';
+  FrmCadProjeto.Show;
 end;
 
 procedure TFrmMenu.BtnCadUsuarioClick(Sender: TObject);

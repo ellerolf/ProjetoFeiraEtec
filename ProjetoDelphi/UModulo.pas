@@ -43,12 +43,12 @@ type
     NotaNOTAGRP: TStringField;
     ProjetoPROCODIGO: TIntegerField;
     ProjetoPRONOME: TStringField;
-    ProjetoCODIGOEIX: TIntegerField;
     UsuarioUSUCODIGO: TIntegerField;
     UsuarioUSUNOME: TStringField;
     UsuarioUSUDTNASC: TDateField;
     UsuarioUSUTIPO: TStringField;
     UsuarioUSUCPF: TStringField;
+    ProjetoPROEIXO: TStringField;
   private
     { Private declarations }
   public

@@ -27,7 +27,6 @@ type
     Layout2: TLayout;
     Label5: TLabel;
     RoundRect2: TRoundRect;
-    Memo1: TMemo;
     procedure BtnSalvarClick(Sender: TObject);
   private
     { Private declarations }
@@ -59,7 +58,6 @@ begin
       DtaDataNasc.Date));
     jsonobj.AddPair('usutipo', CboTipo.Selected.Text);
     gerajson := jsonobj.ToString;
-    Memo1.Text := gerajson;
     dm.RESTRequest1.Resource := '/usuario.php?json={parametro}';
     dm.RESTRequest1.Params.AddUrlSegment('parametro', gerajson);
     dm.RESTRequest1.Execute;
