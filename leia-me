@@ -1,0 +1,28 @@
+MODELO DO JSON PARA O DELPHI
+
+{"op":"i","usucodigo":"0","usucpf":"22554371806","usunome":"ZANATA","usudtnasc":"1984-05-07","usutipo":"PROFESSOR"}
+
+{"op":"i","eixcodigo":"0","eixonome":"INFORMAÇÃO E COMUNICAÇÃO"}
+
+{"op":"i","procodigo":"0","pronome":"CNC DO ZANATA","codigoeix":"1"}
+
+{"op":"i","alucodigo":"0","alunnome":"ANA JÚLIA MARTINS ZANATA","codigopro":"5"}
+
+{"op":"i","notcodigo":"0","codigoalu":"1","notaind":"MB","notagrp":"MB"}
+
+{"op":"i","concodigo":"0","codigousu":"1","proj1":"2","proj2":"3","proj3":"4","proj4":"5"}
+
+
+URL PARA EXECUÇÃO DO JSON
+
+http://localhost:8066/wsfeira/usuario.php?json={"op":"s","usucodigo":"1","usucpf":"22554371806","usunome":"ZANATAS","usudtnasc":"1984-05-07","usutipo":"PROFESSOR"}
+
+http://localhost:8066/wsfeira/eixo.php?json={"op":"s","eixcodigo":"0","eixonome":"INFORMAÇÃO E COMUNICAÇÃO"}
+
+http://localhost:8066/wsfeira/projeto.php?json={"op":"s","procodigo":"0","pronome":"CNC ROUTER","codigoeix":"1"}
+
+http://localhost:8066/wsfeira/aluno.php?json={"op":"s","alucodigo":"0","alunnome":"ANA JÚLIA MARTINS ZANATA","codigopro":"5"}
+
+http://localhost:8066/wsfeira/nota.php?json={"op":"s","notcodigo":"0","codigoalu":"1","notaind":"MB","notagrp":"MB"}
+
+http://localhost:8066/wsfeira/controle.php?json={"op":"s","concodigo":"0","codigousu":"1","proj1":"2","proj2":"3","proj3":"4","proj4":"5"}
