@@ -41,14 +41,14 @@ INSERT INTO `notas` (`NOTCODIGO`, `CODIGOALU`, `NOTAIND`, `NOTAGRP`) VALUES
 CREATE TABLE `projetos` (
   `PROCODIGO` int(11) NOT NULL,
   `PRONOME` varchar(50) DEFAULT NULL,
-  `CODIGOEIX` int(11) DEFAULT NULL
+  `PROEIXO` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `projetos` (`PROCODIGO`, `PRONOME`, `CODIGOEIX`) VALUES
-(2, 'CNC ROUTER', 1),
-(3, 'CUBO DE LED', 1),
-(4, 'CAIXA MÁGICA', 1),
-(5, 'LUTA DE ROBOS', 1);
+INSERT INTO `projetos` (`PROCODIGO`, `PRONOME`, `PROEIXO`) VALUES
+(2, 'CNC ROUTER', 'INFORMAÇÃO E COMUNICAÇÃO'),
+(3, 'CUBO DE LED', 'INFORMAÇÃO E COMUNICAÇÃO'),
+(4, 'CAIXA MÁGICA', 'INFORMAÇÃO E COMUNICAÇÃO'),
+(5, 'LUTA DE ROBOS', 'INFORMAÇÃO E COMUNICAÇÃO');
 
 CREATE TABLE `usuarios` (
   `USUCODIGO` int(11) NOT NULL,
@@ -85,7 +85,7 @@ ALTER TABLE `notas`
 ALTER TABLE `projetos`
   ADD PRIMARY KEY (`PROCODIGO`),
   ADD UNIQUE KEY `PRONOME` (`PRONOME`),
-  ADD KEY `CODIGOEIX` (`CODIGOEIX`);
+  ADD KEY `PROEIXO` (`PROEIXO`);
 
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`USUCODIGO`),
@@ -118,8 +118,6 @@ ALTER TABLE `controle`
 ALTER TABLE `notas`
   ADD CONSTRAINT `notas_ibfk_1` FOREIGN KEY (`CODIGOALU`) REFERENCES `alunos` (`ALUCODIGO`);
 
-ALTER TABLE `projetos`
-  ADD CONSTRAINT `projetos_ibfk_1` FOREIGN KEY (`CODIGOEIX`) REFERENCES `eixos` (`EIXCODIGO`);
 
 CREATE VIEW `vcontrole`  AS SELECT `controle`.`CONCODIGO` AS `CONCODIGO`, `controle`.`CODIGOUSU` AS `CODIGOUSU`, `usuarios`.`USUNOME` AS `USUNOME`, `controle`.`PROJ1` AS `PROJ1`, (select `projetos`.`PRONOME` from `projetos` where `projetos`.`PROCODIGO` = `controle`.`PROJ1`) AS `PRONOME1`, `controle`.`PROJ2` AS `PROJ2`, (select `projetos`.`PRONOME` from `projetos` where `projetos`.`PROCODIGO` = `controle`.`PROJ2`) AS `PRONOME2`, `controle`.`PROJ3` AS `PROJ3`, (select `projetos`.`PRONOME` from `projetos` where `projetos`.`PROCODIGO` = `controle`.`PROJ3`) AS `PRONOME3`, `controle`.`PROJ4` AS `PROJ4`, (select `projetos`.`PRONOME` from `projetos` where `projetos`.`PROCODIGO` = `controle`.`PROJ4`) AS `PRONOME4` FROM (`controle` join `usuarios`) WHERE `controle`.`CODIGOUSU` = `usuarios`.`USUCODIGO`;
 

@@ -4,10 +4,6 @@ Coordinates=90,188,46,51
 [Layout1]
 Coordinates=106,256,53,33
 
-[ListView1]
-Coordinates=770,200,89,141
-Visible=True
-
 [RoundRect4]
 Coordinates=10,256,74,33
 
@@ -21,7 +17,8 @@ Coordinates=345,188,74,33
 Coordinates=249,188,74,33
 
 []
-Coordinates=410,10,65,51
+Coordinates=156,1,49,51
+Visible=True
 
 [DM.Controle]
 Coordinates=134,125,75,159
@@ -30,7 +27,7 @@ Coordinates=134,125,75,159
 Coordinates=247,1,107,87
 
 [DM.Projeto]
-Coordinates=620,170,68,33
+Coordinates=698,180,68,33
 Visible=False
 
 [DM.RESTClient1]
@@ -51,12 +48,6 @@ Coordinates=247,107,69,123
 [DM.Usuario]
 Coordinates=55,322,71,141
 
-[BindSourceDB1]
-Coordinates=620,200,92,123
-
-[BindingsList1]
-Coordinates=134,80,82,33
-
 [Image2]
 Coordinates=235,501,49,51
 
@@ -68,4 +59,14 @@ Coordinates=166,501,64,51
 
 [BtnExcluir]
 Coordinates=254,443,65,51
+
+[ListView1]
+Coordinates=830,180,89,141
+Visible=True
+
+[BindSourceDB1]
+Coordinates=698,180,92,123
+
+[BindingsList1]
+Coordinates=134,71,82,33
 

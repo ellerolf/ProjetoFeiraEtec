@@ -4,7 +4,7 @@ MODELO DO JSON PARA O DELPHI
 
 {"op":"i","eixcodigo":"0","eixonome":"INFORMAÇÃO E COMUNICAÇÃO"}
 
-{"op":"i","procodigo":"0","pronome":"CNC DO ZANATA","codigoeix":"1"}
+{"op":"i","procodigo":"0","pronome":"CNC DO ZANATA","proeixo":"1"}
 
 {"op":"i","alucodigo":"0","alunnome":"ANA JÚLIA MARTINS ZANATA","codigopro":"5"}
 
@@ -19,7 +19,7 @@ http://localhost:8066/wsfeira/usuario.php?json={"op":"s","usucodigo":"1","usucpf
 
 http://localhost:8066/wsfeira/eixo.php?json={"op":"s","eixcodigo":"0","eixonome":"INFORMAÇÃO E COMUNICAÇÃO"}
 
-http://localhost:8066/wsfeira/projeto.php?json={"op":"s","procodigo":"0","pronome":"CNC ROUTER","codigoeix":"1"}
+http://localhost:8066/wsfeira/projeto.php?json={"op":"s","procodigo":"0","pronome":"CNC ROUTER","proeixo":"1"}
 
 http://localhost:8066/wsfeira/aluno.php?json={"op":"s","alucodigo":"0","alunnome":"ANA JÚLIA MARTINS ZANATA","codigopro":"5"}
 

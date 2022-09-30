@@ -9,17 +9,17 @@ $data = json_decode($json, true);
 $op = $data['op'];
 $procodigo = $data['procodigo'];
 $pronome = $data['pronome'];
-$codigoeix = $data['codigoeix'];
+$proeixo = $data['proeixo'];
 
 if ($op == 'i') {
-    $sql = "insert into projetos(pronome, codigoeix)values(?,?);";
+    $sql = "insert into projetos(pronome, proeixo)values(?,?);";
     $prp = $pdo->prepare($sql);
-    $prp->execute(array($pronome, $codigoeix));
+    $prp->execute(array($pronome, $proeixo));
     Bnc::desconectar();
 } else if ($op == 'u') {
-    $sql = "update projetos set pronome=?, codigoeix=? where procodigo=?;";
+    $sql = "update projetos set pronome=?, proeixo=? where procodigo=?;";
     $prp = $pdo->prepare($sql);
-    $prp->execute(array($pronome, $codigoeix, $procodigo));
+    $prp->execute(array($pronome, $proeixo, $procodigo));
     Bnc::desconectar();
 } else if ($op == 'd') {
     $sql = "delete from projetos where procodigo=?;";

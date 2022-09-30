@@ -51,10 +51,10 @@ type
     Label7: TLabel;
     Label8: TLabel;
     RoundRect5: TRoundRect;
-    BtnAtribuicao: TSpeedButton;
     Label9: TLabel;
     Label10: TLabel;
     Label11: TLabel;
+    BtnAtribuicao: TSpeedButton;
     procedure BtnCadUsuarioClick(Sender: TObject);
     procedure BtnCadEixoClick(Sender: TObject);
     procedure BtnCadAlunoClick(Sender: TObject);
@@ -62,6 +62,7 @@ type
     procedure BtnConsUsuarioClick(Sender: TObject);
     procedure BtnConsAlunosClick(Sender: TObject);
     procedure BtnConsProjetoClick(Sender: TObject);
+    procedure BtnAtribuicaoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -78,6 +79,13 @@ implementation
 uses UCadUsuario, UCadAvaliadores, UCadEixo, UCadAluno, UCadProjeto,
   UAtribuicao, UConsUsuario, UConsAluno, UConsProjetos;
 
+procedure TFrmMenu.BtnAtribuicaoClick(Sender: TObject);
+begin
+  FrmAtribuicao.op := 'i';
+  FrmAtribuicao.cod := '0';
+  FrmAtribuicao.Show;
+end;
+
 procedure TFrmMenu.BtnCadAlunoClick(Sender: TObject);
 begin
   FrmCadAluno.Show;
@@ -90,15 +98,15 @@ end;
 
 procedure TFrmMenu.BtnCadProjetoClick(Sender: TObject);
 begin
-  FrmCadProjeto.op:='i';
-  FrmCadProjeto.cod:='0';
+  FrmCadProjeto.op := 'i';
+  FrmCadProjeto.cod := '0';
   FrmCadProjeto.Show;
 end;
 
 procedure TFrmMenu.BtnCadUsuarioClick(Sender: TObject);
 begin
-  FrmCadUsuario.op:='i';
-  FrmCadUsuario.cod:='0';
+  FrmCadUsuario.op := 'i';
+  FrmCadUsuario.cod := '0';
   FrmCadUsuario.Show;
 end;
 

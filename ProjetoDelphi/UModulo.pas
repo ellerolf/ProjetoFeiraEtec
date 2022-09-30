@@ -41,14 +41,23 @@ type
     NotaCODIGOALU: TIntegerField;
     NotaNOTAIND: TStringField;
     NotaNOTAGRP: TStringField;
-    ProjetoPROCODIGO: TIntegerField;
-    ProjetoPRONOME: TStringField;
     UsuarioUSUCODIGO: TIntegerField;
     UsuarioUSUNOME: TStringField;
     UsuarioUSUDTNASC: TDateField;
     UsuarioUSUTIPO: TStringField;
     UsuarioUSUCPF: TStringField;
+    ProjetoPROCODIGO: TStringField;
+    ProjetoPRONOME: TStringField;
     ProjetoPROEIXO: TStringField;
+    RESTResponse2: TRESTResponse;
+    RESTRequest2: TRESTRequest;
+    ControleUSUNOME: TStringField;
+    ControlePRONOME1: TStringField;
+    ControlePRONOME2: TStringField;
+    ControlePRONOME3: TStringField;
+    ControlePRONOME4: TStringField;
+    RESTResponse3: TRESTResponse;
+    RESTRequest3: TRESTRequest;
   private
     { Private declarations }
   public

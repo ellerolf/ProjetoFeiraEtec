@@ -2817,7 +2817,7 @@ object FrmMenu: TFrmMenu
               Text = 'Atribui'#231#227'o de Avalia'#231#227'o'
               TextSettings.Font.Size = 16.000000000000000000
               TextSettings.Font.StyleExt = {00060000000000000004000000}
-              OnClick = BtnCadProjetoClick
+              OnClick = BtnAtribuicaoClick
             end
           end
           object Label9: TLabel
