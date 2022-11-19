@@ -15,16 +15,16 @@ type
     Label1: TLabel;
     EdtNome: TEdit;
     RoundRect1: TRoundRect;
-    BtnSalvar: TSpeedButton;
-    Image1: TImage;
     Layout2: TLayout;
     RoundRect2: TRoundRect;
     Label5: TLabel;
     Label3: TLabel;
     CboEixo: TComboBox;
-    Memo1: TMemo;
+    BtnSalvar: TSpeedButton;
+    Image1: TImage;
     procedure SpeedButton1Click(Sender: TObject);
     procedure BtnSalvarClick(Sender: TObject);
+    procedure SobeDadoProjeto;
   private
     { Private declarations }
     jsonobj: TJSONObject;
@@ -45,22 +45,49 @@ uses UCadEixo, UModulo;
 
 procedure TFrmCadProjeto.BtnSalvarClick(Sender: TObject);
 begin
+  if op = 'i' then
+  begin
+    if ((EdtNome.Text = '') or (CboEixo.ItemIndex = 0)) then
+    begin
+      ShowMessage('Campos faltando, favor conferir');
+    end
+    else
+    begin
+      SobeDadoProjeto;
+    end;
+  end;
+  if op = 'u' then
+  begin
+    if ((EdtNome.Text <> dm.ProjetoPRONOME.Value) or
+      (CboEixo.ItemIndex <> Strtoint(dm.ProjetoPROEIXO.Value))) then
+    begin
+      SobeDadoProjeto;
+    end
+    else
+    begin
+      ShowMessage('Campos faltando, favor conferir');
+    end;
+  end;
+
+end;
+
+procedure TFrmCadProjeto.SobeDadoProjeto;
+begin
   try
     jsonobj := TJSONObject.Create;
     jsonobj.AddPair('op', op);
     jsonobj.AddPair('procodigo', cod);
-    jsonobj.AddPair('pronome', EdtNome.text);
-    jsonobj.AddPair('proeixo', CboEixo.Selected.text);
+    jsonobj.AddPair('pronome', EdtNome.Text);
+    jsonobj.AddPair('proeixo', CboEixo.Selected.Text);
     gerajson := jsonobj.ToString;
-    Memo1.Text:= gerajson;
 
     dm.RESTRequest1.Resource := '/projeto.php?json={parametro}';
     dm.RESTRequest1.Params.AddUrlSegment('parametro', gerajson);
     dm.RESTRequest1.Execute;
 
-    EdtNome.text := '';
+    EdtNome.Text := '';
     CboEixo.ItemIndex := -1;
-    ShowMessage('Gravado');
+    ShowMessage('Dados Gravados');
 
   finally
     jsonobj.DisposeOf;

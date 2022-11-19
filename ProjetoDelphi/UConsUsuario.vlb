@@ -10,21 +10,6 @@ Coordinates=406,188,74,33
 [RoundRect2]
 Coordinates=310,188,74,33
 
-[RoundRect1]
-Coordinates=214,188,74,33
-
-[Image3]
-Coordinates=352,10,49,51
-
-[BtnAlterar]
-Coordinates=127,10,64,51
-
-[BtnExcluir]
-Coordinates=419,10,65,51
-
-[Image1]
-Coordinates=77,188,49,51
-
 [Label5]
 Coordinates=289,10,46,51
 
@@ -32,17 +17,11 @@ Coordinates=289,10,46,51
 Coordinates=550,240,89,141
 Visible=True
 
-[BtnSalvar]
-Coordinates=209,10,62,51
-
-[Image2]
-Coordinates=10,188,49,51
-
 [Layout2]
 Coordinates=144,188,53,33
 
 []
-Coordinates=361,111,91,36
+Coordinates=279,571,65,51
 
 [DM.Eixo]
 Coordinates=134,303,64,87
@@ -57,7 +36,7 @@ Coordinates=243,249,107,87
 Coordinates=243,1,70,105
 
 [DM.Controle]
-Coordinates=55,322,75,159
+Coordinates=55,322,75,249
 
 [DM.RESTResponse1]
 Coordinates=0,0,115,303
@@ -77,4 +56,16 @@ Coordinates=420,240,92,159
 
 [BindingsList1]
 Coordinates=134,143,82,33
+
+[DM.RESTRequest3]
+Coordinates=369,418,107,87
+
+[DM.RESTResponse3]
+Coordinates=82,238,115,303
+
+[DM.RESTRequest2]
+Coordinates=134,143,107,87
+
+[DM.RESTResponse2]
+Coordinates=216,249,115,303
 

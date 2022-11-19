@@ -26,9 +26,6 @@ type
     Projeto: TFDMemTable;
     RDUsuario: TRESTResponseDataSetAdapter;
     Usuario: TFDMemTable;
-    AlunoALUCODIGO: TIntegerField;
-    AlunoALUNNOME: TStringField;
-    AlunoCODIGOPRO: TIntegerField;
     ControleCONCODIGO: TIntegerField;
     ControleCODIGOUSU: TIntegerField;
     ControlePROJ1: TIntegerField;
@@ -41,11 +38,6 @@ type
     NotaCODIGOALU: TIntegerField;
     NotaNOTAIND: TStringField;
     NotaNOTAGRP: TStringField;
-    UsuarioUSUCODIGO: TIntegerField;
-    UsuarioUSUNOME: TStringField;
-    UsuarioUSUDTNASC: TDateField;
-    UsuarioUSUTIPO: TStringField;
-    UsuarioUSUCPF: TStringField;
     ProjetoPROCODIGO: TStringField;
     ProjetoPRONOME: TStringField;
     ProjetoPROEIXO: TStringField;
@@ -58,6 +50,14 @@ type
     ControlePRONOME4: TStringField;
     RESTResponse3: TRESTResponse;
     RESTRequest3: TRESTRequest;
+    UsuarioUSUCODIGO: TIntegerField;
+    UsuarioUSUCPF: TStringField;
+    UsuarioUSUNOME: TStringField;
+    UsuarioUSUDTNASC: TDateField;
+    UsuarioUSUTIPO: TStringField;
+    AlunoALUCODIGO: TIntegerField;
+    AlunoALUNNOME: TStringField;
+    AlunoCODIGOPRO: TIntegerField;
   private
     { Private declarations }
   public

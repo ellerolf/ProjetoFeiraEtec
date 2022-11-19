@@ -63,6 +63,7 @@ type
     procedure BtnConsAlunosClick(Sender: TObject);
     procedure BtnConsProjetoClick(Sender: TObject);
     procedure BtnAtribuicaoClick(Sender: TObject);
+    procedure BtnRelaAvaliacaoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -77,7 +78,7 @@ implementation
 {$R *.fmx}
 
 uses UCadUsuario, UCadAvaliadores, UCadEixo, UCadAluno, UCadProjeto,
-  UAtribuicao, UConsUsuario, UConsAluno, UConsProjetos;
+  UAtribuicao, UConsUsuario, UConsAluno, UConsProjetos, URelProjetos;
 
 procedure TFrmMenu.BtnAtribuicaoClick(Sender: TObject);
 begin
@@ -88,11 +89,14 @@ end;
 
 procedure TFrmMenu.BtnCadAlunoClick(Sender: TObject);
 begin
+  FrmCadAluno.op := 'i';
+  FrmCadAluno.cod := '0';
   FrmCadAluno.Show;
 end;
 
 procedure TFrmMenu.BtnCadEixoClick(Sender: TObject);
 begin
+
   FrmCadEixo.Show;
 end;
 
@@ -123,6 +127,11 @@ end;
 procedure TFrmMenu.BtnConsUsuarioClick(Sender: TObject);
 begin
   FrmConsUsuario.Show;
+end;
+
+procedure TFrmMenu.BtnRelaAvaliacaoClick(Sender: TObject);
+begin
+frmrelprojetos.Show;
 end;
 
 end.

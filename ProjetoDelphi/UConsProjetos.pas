@@ -20,23 +20,25 @@ type
     Label5: TLabel;
     RoundRect3: TRoundRect;
     RoundRect4: TRoundRect;
-    BtnAlterar: TSpeedButton;
-    Image2: TImage;
-    BtnExcluir: TSpeedButton;
-    Image3: TImage;
     ListView1: TListView;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkListControlToField1: TLinkListControlToField;
+    BtnAlterar: TSpeedButton;
+    Image2: TImage;
+    BtnExcluir: TSpeedButton;
+    Image3: TImage;
     procedure FormShow(Sender: TObject);
+    procedure BtnAlterarClick(Sender: TObject);
     procedure ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
       const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
-    procedure BtnAlterarClick(Sender: TObject);
+    procedure BtnExcluirClick(Sender: TObject);
   private
     { Private declarations }
     gerajson: string;
   public
     { Public declarations }
+    op, cod: string;
   end;
 
 var
@@ -51,6 +53,12 @@ uses UModulo, UCadProjeto;
 procedure TFrmConsProjeto.BtnAlterarClick(Sender: TObject);
 begin
   FrmCadProjeto.Show;
+end;
+
+procedure TFrmConsProjeto.BtnExcluirClick(Sender: TObject);
+begin
+op := 'd';
+FrmCadProjeto.SobeDadoProjeto;
 end;
 
 procedure TFrmConsProjeto.FormShow(Sender: TObject);

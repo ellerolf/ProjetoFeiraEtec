@@ -17,11 +17,11 @@ Coordinates=345,188,74,33
 Coordinates=249,188,74,33
 
 []
-Coordinates=156,1,49,51
+Coordinates=254,443,65,51
 Visible=True
 
 [DM.Controle]
-Coordinates=134,125,75,159
+Coordinates=134,125,75,249
 
 [DM.RESTRequest1]
 Coordinates=247,1,107,87
@@ -48,18 +48,6 @@ Coordinates=247,107,69,123
 [DM.Usuario]
 Coordinates=55,322,71,141
 
-[Image2]
-Coordinates=235,501,49,51
-
-[Image3]
-Coordinates=134,1,49,51
-
-[BtnAlterar]
-Coordinates=166,501,64,51
-
-[BtnExcluir]
-Coordinates=254,443,65,51
-
 [ListView1]
 Coordinates=830,180,89,141
 Visible=True
@@ -69,4 +57,16 @@ Coordinates=698,180,92,123
 
 [BindingsList1]
 Coordinates=134,71,82,33
+
+[DM.RESTResponse2]
+Coordinates=0,0,115,303
+
+[DM.RESTRequest2]
+Coordinates=279,355,107,87
+
+[DM.RESTResponse3]
+Coordinates=15,322,115,303
+
+[DM.RESTRequest3]
+Coordinates=134,1,107,87
 

@@ -11,6 +11,7 @@ MODELO DO JSON PARA O DELPHI
 {"op":"i","notcodigo":"0","codigoalu":"1","notaind":"MB","notagrp":"MB"}
 
 {"op":"i","concodigo":"0","codigousu":"1","proj1":"2","proj2":"3","proj3":"4","proj4":"5"}
+{"op":"i","concodigo":"0","codigousu":"0","proj1":"2","proj2":"2","proj3":"2","proj4":"2"}
 
 
 URL PARA EXECUÇÃO DO JSON

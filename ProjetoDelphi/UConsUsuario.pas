@@ -14,31 +14,30 @@ uses
 type
   TFrmConsUsuario = class(TForm)
     Layout1: TLayout;
-    RoundRect1: TRoundRect;
     Layout2: TLayout;
     RoundRect2: TRoundRect;
     Label5: TLabel;
-    BtnSalvar: TSpeedButton;
-    Image1: TImage;
     RoundRect3: TRoundRect;
-    BtnAlterar: TSpeedButton;
-    Image2: TImage;
     ListView1: TListView;
     RoundRect4: TRoundRect;
-    BtnExcluir: TSpeedButton;
-    Image3: TImage;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkListControlToField1: TLinkListControlToField;
+    BtnAlterar: TSpeedButton;
+    Image2: TImage;
+    BtnExcluir: TSpeedButton;
+    Image3: TImage;
     procedure FormShow(Sender: TObject);
     procedure ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
       const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
     procedure BtnAlterarClick(Sender: TObject);
+    procedure BtnExcluirClick(Sender: TObject);
   private
     { Private declarations }
     gerajson: string;
   public
     { Public declarations }
+    cod, op: string;
   end;
 
 var
@@ -53,6 +52,12 @@ uses UModulo, UCadUsuario;
 procedure TFrmConsUsuario.BtnAlterarClick(Sender: TObject);
 begin
   FrmCadUsuario.Show;
+end;
+
+procedure TFrmConsUsuario.BtnExcluirClick(Sender: TObject);
+begin
+  op := 'd';
+  FrmCadUsuario.SobeDadoUsuario;
 end;
 
 procedure TFrmConsUsuario.FormShow(Sender: TObject);
